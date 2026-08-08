@@ -8,12 +8,17 @@
       text-align: center;
       background: #e6f7ff;
       font-family: Arial;
+      body {
+  background: url("LINK-ANH-CUA-BAN");
+  background-size: cover;
+  background-position: center;
+}
     }
 
     #bubble {
       width: 100px;
       height: 100px;
-      background: pink;
+      background: pink;red:;brown
       border-radius: 50%;
       position: absolute;
       top: 200px;
@@ -31,10 +36,12 @@
 <div id="bubble"></div>
 
 <script>
-let score = 0;
+let score = 50;
 
 let bubble = document.getElementById("bubble");
-
+music.play().catch(() => {
+  console.log("Trình duyệt chặn nhạc, cần click mới phát");
+});
 bubble.onclick = function() {
   score++;
   document.getElementById("score").innerText = score;
